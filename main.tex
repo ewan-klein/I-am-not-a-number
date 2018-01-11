@@ -1,5 +1,6 @@
 \documentclass[10pt,twocolumn]{article}
 
+\usepackage[UKenglish]{babel}
 \usepackage{times}
 \usepackage{graphicx}
 \usepackage{url}
@@ -9,7 +10,11 @@ backend=biber,
 style=numeric,
 citestyle=numeric,
 maxnames=4
-]{biblatex} 
+]{biblatex}
+\usepackage[colorinlistoftodos,prependcaption,textsize=footnotesize]{todonotes}
+\presetkeys%
+    {todonotes}%
+    {inline,backgroundcolor=yellow}{}
 
 \addbibresource{iot-living-lab-refs.bib}
 
@@ -27,7 +32,7 @@ Towards participatory IoT monitoring in the workplace}
 
 
 
-\author{\textbf{\textit{Cat Magill$^*$, Ewan Klein$^*$ and Simon Chapple$\dagger$}}}
+\author{\textbf{\textit{Cat Magill$^*$, Ewan Klein$^*$ and Simon Chapple$^\dagger$}}}
 \date{}
 
 \maketitle
@@ -39,8 +44,18 @@ Towards participatory IoT monitoring in the workplace}
 % \end{center}
 % \end{multicols}
 
+\todo{Fix affiliations}
 \begin{abstract}
-The abstract goes here.
+A dominant narrative around the Internet of Things (IoT) asserts that
+value will be realized by using resources more efficiently and by
+creating a better ‘user experience’.  We suggest that IoT initiatives,
+particularly those involving monitoring, can create more value for
+`users' and reduce the risk of adverse reactions to `overmonitoring'
+if users are more actively involved in the design and communication
+process.  On the basis of a small qualitative study of reactions by
+employees to having their workplace monitored by networked sensors, we
+offer three guidelines to help ensure that such initiatives
+incorporate a broader set of values and beneficiaries. 
 \end{abstract}
 
 
