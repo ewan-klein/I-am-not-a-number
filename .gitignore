@@ -36,3 +36,5 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+
+TAGS
