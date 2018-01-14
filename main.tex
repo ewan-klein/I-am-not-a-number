@@ -4,7 +4,11 @@
 \usepackage{fontspec}
 \usepackage{csquotes}
  \setmainfont{Times New Roman}
- 
+\usepackage[affil-it]{authblk}
+
+ \renewcommand*{\Affilfont}{\normalsize\normalfont}
+\renewcommand*{\Authfont}{\bfseries\itshape}
+
 %\usepackage{times}
 \usepackage{graphicx}
 \usepackage{url}
@@ -33,24 +37,19 @@ maxnames=4
 
 \begin{document}
 
-\title{I am not a number:\\
+\title{\bfseries I am not a number:\\
 Towards participatory IoT monitoring in the workplace}
 
-
-
-\author{\textbf{\textit{Cat Magill$^*$, Ewan Klein$^*$ and Simon Chapple$^\dagger$}}}
+\author[*]{Cat Magill}
+\author[*]{Ewan Klein}
+\author[$\dagger$]{Simon Chapple}
+\affil[*]{\textit{School of Informatics, University of Edinburgh, UK}
+  email: \texttt{c.magill@ed.ac.uk}}
+\affil[$\dagger$]{\textit{Information Services Group, University of Edinburgh, UK}}
 \date{}
 
 \maketitle
 
-% \begin{multicols}{1}
-%   \begin{center}
-%   $^*$School of Informatics, University of Edinburgh, \texttt{\{c.magill$\mid$ewan.klein\}@ed.ac.uk}
-% $^\daggger$Information Services Group, University of Edinburgh, \texttt{Simon.Chapple@ed.ac.uk}
-% \end{center}
-% \end{multicols}
-
-\todo{Fix affiliations}
 \begin{abstract}
 A dominant narrative around the Internet of Things (IoT) asserts that
 value will be realized by using resources more efficiently and by
