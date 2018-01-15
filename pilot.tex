@@ -1,5 +1,5 @@
 As part of a broad plan for estates management by the University of
-Edinburgh, several hundreds of operations staff from an operational
+Edinburgh, several hundred staff from an operational
 services department, previously scattered across multiple sites, were
 rehoused in 2016/17 in open-plan offices within refurbished shared
 commercial premises. To complement the open-plan spaces, the ground
@@ -18,23 +18,23 @@ intended to help address two questions of concern to the University’s
 building managers: (i) was the configuration of meeting spaces
 appropriate for the needs of occupants, and (ii) were the
 environmental conditions, particularly in terms of heating and
-ventilation, satisfactor in the open plan offices? 
+ventilation, satisfactory in the open plan offices? 
 
-The pilot project deployed multiple devices, that were networked using
+The pilot project deployed multiple devices that were networked using
 a combination of Bluetooth and LoRaWAN protocols. In one of the small
 meeting rooms, Estimote beacons with auxiliary sensors were attached
 to chairs.%
 \footnote{
- In addition to using the Estimote's inbuilt accelerometer, its
- external GPIO pin was connected to a force sensitive resistor in the
- cushion. This allowed us to measure whether the chair was moved and
+ In addition to using the Estimote beacon's inbuilt accelerometer, its
+ external GPIO pin was connected to a force-sensitive resistor in the
+ cushion. This combination allowed us to measure whether the chair was moved and
  whether it was occupied within each two minute timeframe. The
- Estimotes were configured to transmit data over Bluetooth at least once a
+ beacons were configured to transmit data over Bluetooth at least once a
  second. The data packets were collected by
- a LoPy device,  which sent a summary message over LoRaWAN to a
+ a Pycom LoPy sensor hub,  which sent a summary message over LoRaWAN to a
  central server every two minutes. } 
 An additional sensor was placed
-on the door with accelerometer and light level sensor, thus capturing
+on the door with accelerometer and light-level sensor, thus capturing
 when the door was moved and whether the light was on in the room. In
 addition, sensors for light level, temperature, atmospheric pressure
 and relative humidity were placed near desks across one wing of an
@@ -51,17 +51,16 @@ all building users, and by attaching a notice explaining the project
 to the wall of the monitored meeting room. Figure~\ref{fig:poster}
 illustrates the poster, which includes illustrations of the Estimote
 beacons used as sensors.
- 
 \begin{figure}
   \centering
   \includegraphics[scale=0.35]{images/info-poster}
-  \caption{Lightly anonymised version of the information poster that
+  \caption{The information poster that
     was placed prominently on the wall of the meeting room where
     sensors had been installed.}
   \label{fig:poster}
 \end{figure}
-As we discuss in section~\ref{sec:results}, however, subsequent investigation
-cast into doubt whether these steps were adequate in providing
+As we discuss in section~\ref{sec:results}, subsequent investigation
+cast into doubt whether these communication steps were adequate in providing
 building users with an appropriate level of insight into the
 monitoring work.
 
