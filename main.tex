@@ -1,4 +1,5 @@
 \documentclass[10pt,twocolumn]{article}
+\raggedbottom
 
 \usepackage[UKenglish]{babel}
 \usepackage{fontspec}
@@ -9,9 +10,11 @@
 \renewcommand*{\Affilfont}{\normalsize\normalfont}
 \renewcommand*{\Authfont}{\bfseries\itshape}
 
+\usepackage{enumitem}
+
 \newenvironment{qt}
 {``\itshape }
-{''}
+{''\ignorespacesafterend\ }
 
 %\usepackage{times}
 \usepackage{graphicx}
